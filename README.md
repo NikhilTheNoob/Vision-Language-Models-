@@ -25,7 +25,9 @@ Paper 1 - CLIP (Contrastive Learning Image Pre-Training)
 • The contrastive loss formulation simplifies training by avoiding the need to generate detailed text captions, focusing instead on matching global image-text pairs
 • The scalability of the approach is demonstrated through systematic experiments with different architectures and compute budgets, underscoring the link between model capacity and transfer performance
 • Overall, the CLIP approach illustrates how leveraging vast, naturally occurring image-text pairs can yield a versatile, zero-shot capable visual learner that competes with traditional supervised methods on many tasks
+
 Paper 2 - Context Optimization (CoOp)
+
  • Central idea: Adapt large pre-trained vision-language models (like CLIP) for downstream image recognition by automating prompt engineering rather than manually tuning text prompts
 • Motivation: Manual prompt tuning is time-consuming and requires domain expertise; even slight changes in wording can have a significant impact on performance
 • Approach – Context Optimization (CoOp):
@@ -47,7 +49,9 @@ Paper 2 - Context Optimization (CoOp)
 • Initialization of the context vectors (random vs. using embeddings from “a photo of a”) doesn’t make a significant difference, suggesting the optimization process is robust
 • Even though the learned context vectors are continuous and hard to interpret directly, an indirect analysis (searching for nearest vocabulary words) hints that they capture meaningful, task-relevant information
 • Overall, CoOp demonstrates a simple yet powerful way to adapt vision-language models for varied downstream tasks with minimal data, while also offering strong robustness to distribution changes
+
 Paper 3 - Imbalance VLM 
+
 • Central idea: Explore how vision-language models (VLMs) like CLIP can be adapted for imbalanced learning, addressing their weak performance on datasets where class distributions are skewed (e.g., tail classes have very few examples)
 • Motivation:
 • Zero-shot VLMs perform well on balanced benchmarks but struggle on imbalanced datasets (e.g., CLIP achieves only 5% on iNaturalist18)
